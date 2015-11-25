@@ -116,3 +116,23 @@ public:
         return leftOp->eval() + rightOp->eval();
     }
 };
+// Mult
+class Mult :public Expr
+{
+private:
+    Expr  *leftOp, *rightOp;
+public:
+    Mult(Expr *lhs, Expr *rhs)
+    {
+        leftOp = lhs;
+        rightOp = rhs;
+    }
+    string outputExpr() const
+    {
+        return leftOp->outputExpr() + " * " + rightOp->outputExpr();
+    }
+    double eval()
+    {
+        return leftOp->eval() * rightOp->eval();
+    }
+};
