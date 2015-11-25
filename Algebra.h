@@ -45,7 +45,7 @@ public:  Sin (string s, double a = 0) :s(s), a(a) { Sin::Globalmap->push_back(th
         }
     }
     double eval() { return sin(this->a); }
-    
+    //test
     string outputExpr()const {
         return "sin("+this->s+")";
     }
