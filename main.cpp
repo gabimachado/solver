@@ -27,8 +27,4 @@ int main() {
     
     Expr* e5 = new Sin("x");
     cout << *e5 << endl;
-    
-    
-    
-    system("pause");
 }
