@@ -27,4 +27,11 @@ int main() {
     
     Expr* e5 = new Sin("x");
     cout << *e5 << endl;
+    Sin::set("x", 5);
+    cout << e5->eval()<<endl;
+    
+    Expr* e6 = new Mult(new Sin("x"),new Cos("y"));
+    Cos::set("y",8);
+    cout << *e6 << endl;//sin(x)*sin(y)
+    cout << e6->eval();
 }
