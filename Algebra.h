@@ -47,8 +47,7 @@ public:  Sin (string s, double a = 0) :s(s), a(a) { Sin::Globalmap->push_back(th
     double eval() { return sin(this->a); }
     
     string outputExpr()const {
-        string s1="sin";
-        return s1+"("+this->s+")";
+        return "sin("+this->s+")";
     }
     double getVar() { return sin(this->a); }
     
@@ -71,8 +70,7 @@ public:  Cos (string s, double a = 0) :s(s), a(a) { Cos::Globalmap->push_back(th
     double eval() { return cos(this->a); }
     
     string outputExpr()const {
-        string c1="cos";
-        return c1+"("+this->s+")";
+        return "cos("+this->s+")";
     }
     double getVar() { return cos(this->a); }
     
